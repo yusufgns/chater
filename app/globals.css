@@ -17,11 +17,14 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(107.56deg, #1B1B1B 0%, #000000 100%);
+}
+
+.LandingPage {
+  max-width: 1720px;
+  min-width: 380px;
+  margin: auto;
+  height: 100vh;
+  padding: 20px 0px 20px  0px;
+  background-color: transparent
 }
