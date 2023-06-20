@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='justify-between flex'>
+    <header className='justify-between flex'>
         <span className='flex text-white font-bold text-[26px]'>chat <p className='text-[#E3FF71]'>er</p> </span>
 
         <nav className='flex items-center gap-[35px] font-medium text-white'>
@@ -34,6 +34,6 @@ export default function Navbar() {
             LOGIN
           </button>
         </span>
-      </div>
+      </header>
   )
 }

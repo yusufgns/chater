@@ -3,21 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background: linear-gradient(107.56deg, #1b1b1b 0%, #000000 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    background: linear-gradient(107.56deg, #1b1b1b 0%, #000000 100%);
   }
 }
 
 body {
-  background: linear-gradient(107.56deg, #1B1B1B 0%, #000000 100%);
+  background: linear-gradient(107.56deg, #1b1b1b 0%, #000000 100%);
+}
+
+.Scroll {
+  overflow: auto;
+}
+
+.Scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.Scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.Scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.Scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .LandingPage {
@@ -25,6 +44,6 @@ body {
   min-width: 380px;
   margin: auto;
   height: 100vh;
-  padding: 20px 0px 20px  0px;
-  background-color: transparent
+  padding: 20px 0px 20px 0px;
+  background-color: transparent;
 }

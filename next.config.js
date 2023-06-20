@@ -2,6 +2,7 @@
 const nextConfig = {
     experimental: {
         esmExternals: true,
+        serverActions: true,
         appDir: true,
     },
     images: {

@@ -2,8 +2,10 @@ import Message from '@/components/Home/Home_Container/Message'
 import Navbar from '@/components/Home/Navbar'
 import User from '@/components/Home/Home_Container/User'
 import { AiOutlineMessage, AiFillPlusSquare } from 'react-icons/ai'
+import { FaGithubSquare } from 'react-icons/fa'
 import { BsEmojiKissFill } from 'react-icons/bs'
 import { TiTick } from 'react-icons/ti'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -64,10 +66,25 @@ export default function Home() {
         </section>
       </main>
 
-      <main className=' absolute bottom-16 flex items-center'>
-        <p className='text-[25px] font-medium text-[#E3FF71]'>secure</p> 
-        <p className='text-[25px] font-medium text-white'>messaging</p> 
-      </main>
+      <section className=' absolute bottom-16 flex items-center'>
+        <p className='text-[25px] font-medium text-[#E3FF71]'>secure</p>
+        <p className='text-[25px] font-medium text-white'>messaging</p>
+      </section>
+
+      <Link href={'https://github.com/yusufgns/chater'} target='_blank'>
+        <section className='absolute right-0 bottom-16'>
+          <div className='
+          rounded-xl
+          text-bold
+          flex
+          items-center
+          justify-center
+          text-white
+          text-[55px]'>
+            <FaGithubSquare></FaGithubSquare>
+          </div>
+        </section>
+      </Link>
     </div>
   )
 }

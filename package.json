@@ -10,6 +10,13 @@
     "gen-types": "supabase gen types typescript --linked > types/supabase.ts"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/base": "^5.0.0-beta.4",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/system": "^5.13.5",
+    "@supabase/auth-helpers-nextjs": "^0.7.2",
+    "@supabase/supabase-js": "^2.25.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
@@ -24,6 +31,7 @@
     "react-icons": "^4.9.0",
     "react-image": "^4.1.0",
     "react-query": "^3.39.3",
+    "styled-components": "^5.3.11",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3",
     "zustand": "^4.3.8"
