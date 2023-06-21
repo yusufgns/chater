@@ -71,12 +71,9 @@ export default function Home({ serverPost }: any) {
                             )}
                             <div className='bg-[#2E343D] px-[20px] py-[10px] w-fit rounded-lg mb-1'>
                                 <p className='text-[14px]'>{posts.user}</p>
-                                {posts.grouped.slice(0, 1).map((e: any) => (
-                                    <div key={e.id}>{e.message}</div>
-                                ))}
                             </div>
                             <div>
-                                {posts.grouped.slice(1, -1).map((e: any) => (
+                                {posts.grouped.slice(0, -1).map((e: any) => (
                                     <div key={e.id} className='bg-[#2E343D] px-[20px] py-[10px] w-fit rounded-lg mb-1'>
                                         {e.message}
                                     </div>

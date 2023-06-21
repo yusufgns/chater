@@ -53,7 +53,7 @@ export default function Home() {
           </span>
         </section>
 
-        <section className='flex items-center justify-center'>
+        <Link href='/auths' className='flex items-center justify-center'>
           <span className='flex justify-center gap-[25px] mt-[45px] w-[350px] bg-[#2D2D2D] text-white py-[10px] px-[8px] rounded-md'>
             <button className='flex items-center w-full justify-between'>
               <span className='flex items-center gap-2'>
@@ -63,7 +63,7 @@ export default function Home() {
               <div className=''><BsEmojiKissFill></BsEmojiKissFill></div>
             </button>
           </span>
-        </section>
+        </Link>
       </main>
 
       <section className=' absolute bottom-16 flex items-center'>

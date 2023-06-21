@@ -3,8 +3,15 @@ import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import type { Database } from '@/types/supabase'
 import RouterPush from '@/components/RouterPush'
+import { redirect } from 'next/navigation'
 
 export default async function Login() {
+  const supabase = createServerActionClient<Database>({ cookies })
+  const {data: session} = await supabase.auth.getSession()
+  if(session.session) {
+    redirect('/chats')
+  }
+
   const handleSignUp = async (formData: FormData) => {
     'use server'
     const email = String(formData.get('email'))
